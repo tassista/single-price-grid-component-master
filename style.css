@@ -1,0 +1,56 @@
+/*font-family: "Karla", sans-serif;*/
+:root{
+    --primary-cyan: hsl(179, 62%, 43%);
+    --right-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Karla", sans-serif;
+}
+body{
+    background-color: var(--light-gray);
+    width: 82%;
+    margin: 4rem auto;
+}
+section{
+    padding: 2rem 1.5rem;
+}
+li{
+    list-style: none;
+}
+.section__title{
+    font-size: 1.2rem;
+    font-weight: 700;margin-bottom: 1.6rem;
+}
+.section__subtitle{
+    font-size: .925rem;
+    font-weight: 700;
+}
+.join{
+    background-color: white;
+    color: var(--grayish-blue);
+}
+.pricing{
+    background-color: var(--primary-cyan);
+    color: white;
+}
+.why{
+    background-color: hsl(179, 62%, 55%);
+    color: white;
+}
+.join .section__title{
+    color: var(--primary-cyan);
+}
+.join .section__subtitle{
+    color: var(--right-yellow);
+    margin-bottom: 1rem;
+}
