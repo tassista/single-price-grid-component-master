@@ -18,18 +18,26 @@ html{
 }
 body{
     background-color: var(--light-gray);
-    width: 82%;
+    width: 83%;
     margin: 4rem auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 section{
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
 }
 li{
     list-style: none;
+    margin-bottom: .2rem;
+    font-size: .875rem;
+}
+a{
+    text-decoration: none;
 }
 .section__title{
-    font-size: 1.2rem;
-    font-weight: 700;margin-bottom: 1.6rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem ;
 }
 .section__subtitle{
     font-size: .925rem;
@@ -38,19 +46,66 @@ li{
 .join{
     background-color: white;
     color: var(--grayish-blue);
-}
-.pricing{
-    background-color: var(--primary-cyan);
-    color: white;
-}
-.why{
-    background-color: hsl(179, 62%, 55%);
-    color: white;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
 }
 .join .section__title{
     color: var(--primary-cyan);
 }
 .join .section__subtitle{
     color: var(--right-yellow);
+    margin-bottom: 1.5rem;
+}
+.join__text{
+    font-size: .85rem;
+    line-height: 1.9;
     margin-bottom: 1rem;
+}
+.pricing{
+    background-color: var(--primary-cyan);
+    color: var(--light-gray);
+}
+.pricing .section__title{
+    font-size: 1.1rem;
+}
+.price{
+    margin-top: -1rem;    
+    color:rgba(255, 255, 255, 0.4);/*easier to align with flexbox*/
+}
+.amount{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--light-gray);
+    position: relative;
+    top: 5px;
+    margin-right: .5rem;
+}
+.pricing .section__subtitle{
+    margin-top: 1rem;
+    color:rgba(255, 255, 255, 0.6);
+}
+.btn{
+ display: block;
+ margin-top: 2rem;
+ margin-bottom: .5rem;
+ background-color: var(--right-yellow);
+ padding-block: .95rem;
+ text-align: center;
+ border-radius: 5px;
+ color: var(--light-gray);
+ font-size: .9rem;
+ font-weight: 700;
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.why{
+    background-color: hsl(179, 62%, 55%);
+    color: var(--light-gray);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.why__list{
+    padding: 0;
+    color:rgba(255, 255, 255, 0.6);
+    margin-bottom: .5rem;
 }
